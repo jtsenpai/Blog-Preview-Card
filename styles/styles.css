@@ -27,13 +27,13 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0;
+  padding: 10px;
 }
-main .top-img {
-  border-radius: 30px;
-  width: 90%;
-  padding: 15px;
-  margin: 0;
+main .card-img {
+  padding: 10px;
+}
+main .card-img img {
+  border-radius: 20px;
 }
 
 .attribution {

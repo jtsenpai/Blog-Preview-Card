@@ -27,12 +27,14 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0;
-  .top-img {
-    border-radius: 30px;
-    width: 90%;
-    padding: 15px;
-    margin: 0;
+  padding: 10px;
+
+  .card-img {
+    padding: 10px;
+
+    img {
+      border-radius: 20px;
+    }
   }
 }
 
