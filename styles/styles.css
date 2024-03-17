@@ -23,7 +23,7 @@ body {
 
 main {
   width: 24rem;
-  height: 30rem;
+  height: 35rem;
   background-color: var(--white);
   border-radius: 20px;
   display: flex;
