@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 50%);
+  --black: hsl(0, 0%, 7%);
+}
+
+* {
+  font-family: "Figtree", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--yellow);
+  gap: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  width: 370px;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+main .hero-image {
+  width: 336px;
+  object-fit: cover;
+  position: relative;
+  margin: 20px auto 12px;
+  border-radius: 10px;
+  animation: scale-up-center 0.8s ease-in-out both;
+}
+
+ @keyframes scale-up-center {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+main .card-content {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+main .card-content .block {
+  background-color: var(--yellow);
+  display: inline-block;
+  padding: 5px;
+  border-radius: 4px;
+  font-weight: 800;
+  width: 70px;
+  text-align: center;
+  font-size: 0.7em;
+}
+
+main .card-content .date {
+  font-size: 0.8rem;
+  margin: 10px 0;
+}
+
+main .card-content .title {
+  font-weight: 800;
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: all .15s ease-in;
+}
+
+main .card-content .title:hover {
+  color: var(--yellow);
+  
+}
+
+main .card-content .text-content {
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--grey);
+}
+
+main .author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+main .author img {
+  width: 32px;
+  margin-left: 20px;
+}
+
+main .author span {
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  main {
+    width: 340px;
+  }
+
+  main .hero-image {
+    width: 290px;
+    mb2
+  }
+}
