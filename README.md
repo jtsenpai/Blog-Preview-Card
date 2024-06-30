@@ -28,20 +28,16 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Mobile png](./screenshot/mobile.png)
+Mobile Display of the Site
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![Desktop png](./screenshot/desktop.png)
+Desktop Display of the Site
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [https://jt-blog-preview-card.netlify.app](https://your-live-site-url.com)
+- Solution URL: [Github Link](https://github.com/jtsenpai/Blog-Preview-Card)
+- Live Site URL: [Blog Preview Website](https://jt-blog-preview-card.netlify.app)
 
 ## My process
 
@@ -50,39 +46,34 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- CSS Transitions
+- CSS Hover states
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+This is my first project after a month of absence from Frontend Mentor. I'm using the learning path feature to complete a few projects.  Working on a web development project that incorporates CSS transitions and animations is both exciting and rewarding. These elements add a layer of interactivity and visual appeal to websites, making user experiences more engaging. CSS transitions allow for smooth changes between states, such as hovering over buttons or toggling menus, while animations can bring elements to life with movement and effects. Combining these techniques requires a keen eye for design and detail, as well as a solid understanding of CSS properties and keyframes. The result is a dynamic and responsive website that captivates users and enhances usability.
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+main .hero-image {
+  width: 336px;
+  object-fit: cover;
+  position: relative;
+  margin: 20px auto 12px;
+  border-radius: 10px;
+  animation: scale-up-center 0.8s ease-in-out both;
+}
+
+ @keyframes scale-up-center {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 ```
 
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+The code above contains the animation I added to the image, making it scale out when the website is loaded
 
 ### Continued development
 
